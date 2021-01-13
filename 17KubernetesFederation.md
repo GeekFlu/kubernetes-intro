@@ -1,0 +1,3 @@
+# Kubernetes Federation
+
+- [With Kubernetes Cluster Federation](https://github.com/kubernetes-sigs/kubefed/blob/master/README.md) we can manage multiple Kubernetes clusters from a single control plane. We can sync resources across the federated clusters and have cross-cluster discovery. This allows us to perform Deployments across regions, access them using a global DNS record, and achieve High Availability. Although still an Alpha feature, the Federation is very useful when we want to build a hybrid solution, in which we can have one cluster running inside our private datacenter and another one in the public cloud, allowing us to avoid provider lock-in. We can also assign weights for each cluster in the Federation, to distribute the load based on custom rules. 
